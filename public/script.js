@@ -1,4 +1,4 @@
-let usarMock = true;
+let usarMock = false;
 let paginaAtual = 1;
 let itensPorPagina = 10000;
 let inadimplenciasPorPagina = []; // Armazenar inadimplência por página
