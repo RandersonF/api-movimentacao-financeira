@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #0078d4;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#modoAtualContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#alternarModo {
+  padding: 8px 12px;
+  border: none;
+  background-color: #fff;
+  color: #0078d4;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#alternarModo:hover {
+  background-color: #e0e0e0;
+}
+
+#modoAtual {
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+#btnBuscar {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+#btnBuscar:hover {
+  background-color: #218838;
+}
+
+#etapa {
+  margin-bottom: 30px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Totais */
+#totais {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#totais h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+#totais ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px 20px;
+}
+
+#totais li {
+  padding: 8px 12px;
+  background-color: #fafafa;
+  border-left: 4px solid #0078d4;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#totais span {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Destaque para inadimplência */
+#inadimplenciaTotal {
+  color: red !important;
+}
+
+#totais {
+  margin-top: 2rem;
+}
+
+.grupo-totalizadores {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.grupo-totalizadores h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.grupo-totalizadores ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.grupo-totalizadores li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+#detalheInadimplencia {
+  display: none;
+  max-height: 10vh;
+  overflow-y: auto;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f0f2f5; /* tom levemente diferente */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* largura total */
+  box-sizing: border-box;
+}
+
+#detalheInadimplencia.visivel {
+  display: flex !important;
+  flex-direction: column;
+  max-height: 50vh; /* altura máxima ajustada */
+}
+
+#detalheInadimplencia h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#detalheInadimplencia ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 50px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#detalheInadimplencia li {
+  padding: 4px 0;
+  border-left: 3px solid #007BFF;
+  padding-left: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}

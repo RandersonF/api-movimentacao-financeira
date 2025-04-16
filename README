@@ -1,0 +1,52 @@
+# 💰 Relação de Dados – Movimentação Financeira
+
+Este projeto é uma aplicação web que consome uma API paginada para exibir dados financeiros, incluindo totalizadores e detalhamentos por página. O objetivo é fornecer uma visão clara e interativa das movimentações financeiras, facilitando a análise de inadimplências e outros indicadores relevantes.
+
+## 📋 Índice
+
+- [💡 Sobre o Projeto](#-sobre-o-projeto)
+- [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [⚙️ Como Executar o Projeto](#️-como-executar-o-projeto)
+- [🧩 Funcionalidades](#-funcionalidades)
+- [📄 Licença](#-licença)
+
+## 💡 Sobre o Projeto
+
+A aplicação permite:
+
+- Buscar dados financeiros de uma API que retorna resultados paginados.
+- Exibir totalizadores de valores e quantidades.
+- Detalhar inadimplências por página ao interagir com o totalizador correspondente.
+- Apresentar os dados de forma organizada, com design responsivo e usabilidade aprimorada.
+
+## 🚀 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- [API Externa de Dados Financeiros](#) *(Substitua pelo link da API, se disponível)*
+
+## ⚙️ Como Executar o Projeto
+
+1. Clone o repositório:
+
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+2. Navegue até o diretório do projeto:
+    
+    cd nome-do-repositorio
+3. Abra o arquivo index.html em seu navegador preferido.
+
+🧩 Funcionalidades
+Busca de Dados: Recupera informações financeiras de uma API externa.
+
+Totalizadores: Exibe valores agregados, como total de inadimplências, parcelas em aberto, entre outros.
+
+Detalhamento por Página: Ao clicar no total de inadimplências, exibe um container com os valores por página da API.
+
+Design Responsivo: Interface adaptável a diferentes tamanhos de tela.
+
+📄 Licença
+Este projeto está licenciado sob a Licença MIT.
+
+Desenvolvido com 💙 por Randerson Fonceca
+

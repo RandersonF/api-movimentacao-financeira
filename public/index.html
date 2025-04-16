@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relação de dados – Movimentação Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Relação de dados – Movimentação Financeira</h1>
+        <div id="modoAtualContainer">
+            <button id="alternarModo">Alternar Modo</button>
+            <span id="modoAtual">(Usando MODO MOCK)</span>
+        </div>
+    </header>
+    <main>
+
+        <button id="btnBuscar">Buscar Dados</button>
+        <p id="etapa">Aguardando requisição...</p>
+
+        <section id="totais">
+            <h2>Totalizadores</h2>
+
+            <div class="grupo-totalizadores">
+                <h3>Totais em Valor (R$)</h3>
+                <ul>
+                    <li>Valor total: <span id="valorTotal">R$ 0,00</span></li>
+                    <li>Valor líquido total: <span id="valorLiquido">R$ 0,00</span></li>
+                    <li>Valor c/ melhor desconto total: <span id="melhorDesconto">R$ 0,00</span></li>
+                    <li>Valor do melhor desconto total: <span id="valorMelhorDesconto">R$ 0,00</span></li>
+                    <li>Valor atualizado total: <span id="valorAtualizado">R$ 0,00</span></li>
+                    <li>Juros e multas total: <span id="jurosMultas">R$ 0,00</span></li>
+                    <li>Inadimplência total:
+                        <div id="inadimplenciaTotal" style="cursor: pointer; color: red; text-decoration: underline;">
+                            0,00
+                        </div>
+                    </li>
+                </ul>
+                <div id="detalheInadimplencia" style="display: none; margin-top: 10px;">
+                </div>
+            </div>
+
+            <div class="grupo-totalizadores">
+                <h3>Totais em Quantidade (Qtd. de Parcelas)</h3>
+                <ul>
+                    <li>Parcelas em aberto: <span id="parcelasAbertas">0</span></li>
+                    <li>Parcelas restritas: <span id="parcelasRestritas">0</span></li>
+                    <li>Parcelas pagas: <span id="parcelasPagas">0</span></li>
+                    <li>Parcelas em atraso: <span id="parcelasAtraso">0</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
